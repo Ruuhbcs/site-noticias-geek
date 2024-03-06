@@ -34,3 +34,31 @@ h1,h2 {
     text-decoration: none;
     font-weight: 600;
 }
+
+.carrossel {
+    /*tirando estilo das listas*/
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    --total-items: 6;
+    --selected-item: 0;
+    width: 600%;
+    width: calc(var(--total-items) * 100%);
+    position: relative;
+    left: calc(var(--selected-item)* -100%);
+    /*isso aqui ira deixar todas imagens na horizontal e na mesma largura*/
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.carrossel-inicial{
+    overflow: hidden;
+}
+
+.carrossel-controle:nth-child(1):checked ~ .carrossel-inicial.carrossel{--selected-item: 0;}
+.carrossel-controle:nth-child(2):checked ~ .carrossel-inicial.carrossel{--selected-item: 1;}
+.carrossel-controle:nth-child(3):checked ~ .carrossel-inicial.carrossel{--selected-item: 2;}
+.carrossel-controle:nth-child(4):checked ~ .carrossel-inicial.carrossel{--selected-item: 3;}
+.carrossel-controle:nth-child(5):checked ~ .carrossel-inicial.carrossel{--selected-item: 4;}
+.carrossel-controle:nth-child(6):checked ~ .carrossel-inicial.carrossel{--selected-item: 5;}
