@@ -1,7 +1,23 @@
 *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
-h1 {
+nav{
+    
+}
+
+.nav-itens{
+    list-style: none;
+    display:flex;
+}
+
+h1,h2 {
     font-family: 'Teko', sans-serif;
+}
+
+.nav-itens li {
+    padding-left: 40px;
 }
