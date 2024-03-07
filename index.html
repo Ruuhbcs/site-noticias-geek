@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,65 +9,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <title>GeekHub</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Conteúdo do site aqui --> 
+    <!-- Conteúdo do site aqui -->
     <header>
         <!-- Conteúdo do cabeçalho (logotipo, menu, etc.) -->
         <nav>
             <div class="logo">GeekHub</div>
             <div class="links">
-            <ul class="nav-itens">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="filmes-e-séries.html">Filmes e Séries</a></li>
-                <li><a href="animes.html">Animes</a></li>
-                <li><a href="hq-livros.html">HQ e Livros</a></li>
-                <li><a href="jogos.html">Jogos</a></li>
-            </ul>
+                <ul class="nav-itens">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="filmes-e-séries.html">Filmes e Séries</a></li>
+                    <li><a href="animes.html">Animes</a></li>
+                    <li><a href="hq-livros.html">HQ e Livros</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                </ul>
             </div>
         </nav>
 
     </header>
     <main>
         <!-- Conteúdo principal do site -->
-        <input type="radio" class="carrossel-controle" name="slide" checked>
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
 
         <section id="inicio">
-            <div class="carrossel-inicial">
-            <ul class="carrossel">
-                <li class="img01">
-                    <img src="img/pantera-negra.png" alt="foto do super herói Pantera Negra"> 
-                </li>
-                <li class="img02">
-                    <img src="img/hulk.png" alt="foto do Incrível Hulk">
-                </li>
-                <li class="img03">
-                    <img src="img/batgirl.png" alt="foto da Batgirl">
-                </li>
-                <li class="img04">
-                    <img src="img/miranha.png" alt="foto do homem aranha">
-                </li>
-                <li class="img05">
-                    <img src="img/super-choque.png" alt="foto do Super-Choque">
-                </li>
-                <li class="img06">
-                    <img src="img/tempestade.png" alt="foto da xmen Tempestade">
-                </li>
-            </ul>
-        </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/pantera-negra.png" alt="Imagem super herói Pantera Negra">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/hulk.png" alt="Imagem do incrivel Hulk">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/batgirl.png" alt="Imagem cartoon da Batgirl">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/miranha.png" alt="Imagem do Homem Aranha">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/super-choque.png" alt="Imagem do herói cartoon super choque">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/tempestade.png" alt="Imagem da XMen Tempestade">
+                    </div>
+
+                    <<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
             <h1>
-                Faça parte da jornada épica através da galáxia geek. Bem-vindos ao GeekHub, onde cada clique é uma aventura!
+                Faça parte da jornada épica através da galáxia geek. Bem-vindos ao GeekHub, onde cada clique é uma
+                aventura!
             </h1>
             <div class="scroll">
                 <img src="img/scroll.png" alt="seta sinalizando rolagem para baixo.">
@@ -78,20 +98,22 @@
             <div class="conteúdo das notícias">
                 <div class="notícia destaque 01">
                     <img src="img/realidade-virtual-sonho.jpg" alt="Mulher dormindo com um óculos VR">
-                    <h3>Empresa de Tecnologia Revela Protótipo de Dispositivo que Transforma Sonhos em Jogos Interativos</h3>
+                    <h3>Empresa de Tecnologia Revela Protótipo de Dispositivo que Transforma Sonhos em Jogos Interativos
+                    </h3>
                 </div>
                 <div class="notícia destaque 02">
                     <img src="img/sabre-real.jpg" alt="Homem segura um sabre de luz real">
-                    <h3>Cientistas Criam Sabre de Luz Funcional com Tecnologia de Plasma: Duelos Jedi Agora São uma Realidade!</h3>
+                    <h3>Cientistas Criam Sabre de Luz Funcional com Tecnologia de Plasma: Duelos Jedi Agora São uma
+                        Realidade!</h3>
                 </div>
                 <div>
-                   <div class="notícia destaque 03">
-                    <img src="img/pokemon-realista.jpg" alt="Pokemons desenhados de forma hiper realista">
-                    <h3>Cientistas Descobrem Novo Planeta Habitado por Criaturas que se Assemelham a Pokémon</h3>
-                   </div> 
-                   <div class="yoda-img">
-                    <img src="img/baby-yoda-fundo.png" alt="Baby yoda a frente de um circulo rosa">
-                   </div>
+                    <div class="notícia destaque 03">
+                        <img src="img/pokemon-realista.jpg" alt="Pokemons desenhados de forma hiper realista">
+                        <h3>Cientistas Descobrem Novo Planeta Habitado por Criaturas que se Assemelham a Pokémon</h3>
+                    </div>
+                    <div class="yoda-img">
+                        <img src="img/baby-yoda-fundo.png" alt="Baby yoda a frente de um circulo rosa">
+                    </div>
                 </div>
 
             </div>
@@ -102,4 +124,5 @@
 
     </footer>
 </body>
+
 </html>
