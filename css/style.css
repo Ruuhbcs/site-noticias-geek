@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-color: #F2E96D;
 }
 
 nav {
@@ -17,6 +18,7 @@ nav {
 .logo {
     font-weight: 600;
     font-size: 25px;
+    background-color: #F279A6;
 }
 
 .nav-itens{
@@ -33,5 +35,32 @@ h1,h2 {
     color: black;
     text-decoration: none;
     font-weight: 600;
+    background-color: #F279A6;
+}
+
+.carousel-inner .carousel-item img {
+    max-width: 20%;  /* Reduz o tamanho da imagem para 50% do tamanho original */
+    float: right;    /* Alinha a imagem à direita */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    right: 0;
+    left: auto;
+}
+
+.carousel-control-prev {
+    margin-right: 170px; /* Adiciona um espaço entre as setas */
+}
+
+.carousel-control-next{
+margin-left: 200px;
+}
+
+.carousel-indicators {
+    justify-content: flex-end;
+    right: 0;
+    left: auto;
+    bottom: 5px; /* Ajuste conforme necessário */
 }
 
