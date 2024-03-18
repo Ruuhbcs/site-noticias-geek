@@ -32,6 +32,14 @@ header{
     margin-right: auto;
 }
 
+footer {
+    background-color: #F279A6; 
+    color: #fff; 
+    padding: 20px; /* Espaçamento interno do rodapé */
+    text-align: center; 
+}
+
+
 .paginacarrossel{
     display: flex;
     justify-content: space-around;
@@ -116,8 +124,14 @@ header{
 
 .noticiasbaixo img{
     width: 500px;
-    border-radius: 15px;
+    border-radius: 16px;
     height: 300px;
+    overflow: hidden;
+}
+
+.yoda {
+    width: 500px;
+    height: 350px;
     overflow: hidden;
 }
 
@@ -137,29 +151,345 @@ header{
 
 #filmes-series{
     background-color: #865FD9;
+    padding: 20px;
+}
+
+#filmes-series h1{
+    color: #F2E96D;
+    text-align: center;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.425);
+    
+}
+
+.noticias-filmeseries {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 25px;
+    justify-content: center;
 }
 
 .noticias-filmeseries img{
     max-width: 100%;
     display: block;
-}
-
-.noticias-filmeseries{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
-    justify-content: center;
-}
-
-.noticias-filmeseries #noticia01fs{
     border-radius: 16px;
-    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.noticias-filmeseries a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.noticias-filmeseries h2 {
+    font-size: 30px;
+    position: relative;
+    top: -200px; /*aqui caso os h2 da noticia fique torto*/
+}
+
+/*.noticias-filmeseries #noticia01fs{
+    width: 800px;
+    height: 430px;
+    object-fit: cover;
 }
 
 .noticias-filmeseries #noticia02fs {
     width: 389px;
     height: 430px;
-    border-radius: 16px;
     object-fit: cover;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   }
+
+  .noticias-filmeseries #noticia03fs{
+    width: 389px;
+    height: 430px;
+    object-fit: cover;
+}
+
+.noticias-filmeseries #noticia04fs {
+    width: 800px;
+    height: 430px;
+    object-fit: cover;
+  }
+
+
+  .noticias-filmeseries #noticia05fs{
+    width: 800px;
+    height: 430px;
+    object-fit: cover;
+}
+
+.noticias-filmeseries #noticia06fs {
+    width: 389px;
+    height: 430px;
+    object-fit: cover;
+  }*/
+
+.noticias-filmeseries .noticiamaior{
+    width: 800px;
+    height: 430px;
+    object-fit: cover;
+}
+
+.noticias-filmeseries .noticiamenor{
+    width: 389px;
+    height: 430px;
+    object-fit: cover;
+}
+
+#animes {
+    background-color: #F2E96D;
+    padding: 20px;
+}
+
+#animes h1 {
+    color: #865FD9;
+    text-align: center;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+.noticias-anime {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 25px;
+    justify-content: center;
+
+}
+
+.noticias-anime img{
+    max-width: 100%;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.noticias-anime a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.noticias-anime h2 {
+    font-size: 30px;
+    position: relative;
+    top: -200px; /*aqui caso os h2 da noticia fique torto*/
+}
+
+.noticias-anime #noticia01a{
+    width: 800px;
+    height: 430px;
+    object-fit: cover;
+}
+
+.noticias-anime #noticia02a{
+    width: 389px;
+    height: 430px;
+    object-fit: cover;
+  }
+
+  .noticias-anime #noticia03a{
+    width: 389px;
+    height: 430px;
+    object-fit: cover;
+}
+
+.noticias-anime #noticia04a{
+    width: 800px;
+    height: 430px;
+    object-fit: cover;
+  }
+
+
+  .noticias-anime #noticia05a{
+    width: 800px;
+    height: 430px;
+    object-fit: cover;
+}
+
+.noticias-anime #noticia06a{
+    width: 389px;
+    height: 430px;
+    object-fit: cover;
+  }
+
+/* PÁGINAS DAS NOTÍCIAS */
+
+/* Filmes e séries*/
+
+#viagem-ao-centro-da-terra{
+    background-color: #F2E96D;
+}
+
+#viagem-ao-centro-da-terra img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.FS01 {
+padding: 20px;
+}
+
+#viagem-ao-centro-da-terra h1{
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#viagem-ao-centro-da-terra p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+#bates-motel{
+    background-color: #F2E96D;
+}
+
+#bates-motel img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.FS02 {
+padding: 20px;
+}
+
+#bates-motel h1{
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#bates-motel p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+#deadpool{
+    background-color: #865FD9;
+}
+
+#deadpool img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.FS03 {
+padding: 20px;
+}
+
+#deadpool h1{
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#deadpool p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+#star-wars {
+    background-color: #F2E96D;
+}
+
+#star-wars img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.FS04 {
+padding: 20px;
+}
+
+#star-wars h1{
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#star-wars p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+#you {
+    background-color: #F2E96D;
+}
+
+#you img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.FS05 {
+padding: 20px;
+}
+
+#you h1{
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#you p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+#pantera-negra {
+    background-color: #F2E96D;
+}
+
+#pantera-negra img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.FS06 {
+padding: 20px;
+}
+
+#pantera-negra h1{
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#pantera-negra p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
